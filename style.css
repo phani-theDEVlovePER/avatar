@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav {
+    min-width: 100%;
+    height: 7vh;
+    background-color: #002244;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.wrapper {
+    height: 93vh;
+    min-width: 100%;
+}
+
+.container {
+    padding: 5rem;
+    height: 100%;
+    min-width: 100vw;
+    background: linear-gradient(45deg, #002244, #13274F);
+    display: flex;
+    gap: 2%;
+
+}
+
+.container .img-container {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 90%;
+    padding: 2rem;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    min-width: 50%;
+    color: white;
+    line-height: 2rem;
+}
+
+.container .content h2 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.container .content p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+/* media  queries */
+
+@media (max-width:1024px) {
+    .img-container img {
+        width: 28rem;
+    }
+}
+
+@media (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:448px) {
+    nav{
+        width: 100%;
+    }
+    .container{
+        padding: 2rem;
+    }
+    .img-container img {
+        width: 22rem;
+    }
+    .container .content {
+        height: 100%;
+        gap: 1rem;
+        min-width: 100%;
+    }
+    
+    .container .content h2 {
+        font-size: 22px;
+    }
+    
+    .container .content p {
+        font-size: 14px;
+    }
+
+    .wrapper{
+        height: auto;
+    }
+    nav ul li {
+        font-size: 1rem;
+    }
+}
